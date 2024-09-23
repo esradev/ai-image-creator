@@ -1,10 +1,12 @@
-import Link from "next/link";
+import RegisterForm from "../components/RegisterForm";
+
 export default function Page() {
   return (
     <div>
-      <h1 className="text-blue-500">My App</h1>
-      <Link href="/login">Login</Link>
-      <p>Isn't this cool?</p>
+      <p className="text-center text-2xl text-gray-600 mb-5">
+        Don't Have and account? <strong>Create One</strong>
+      </p>
+      <RegisterForm />
     </div>
   );
 }
